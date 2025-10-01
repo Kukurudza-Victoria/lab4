@@ -18,4 +18,11 @@ public abstract class Character {
         kickStrategy.kick(this, enemy);
 
     }
+    public void setHp(int newHp) {
+        if (newHp < 0) {
+            hp = 0;
+        } else {
+            hp = newHp;
+        }
+    }
 }
